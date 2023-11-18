@@ -1,13 +1,9 @@
-* {
-    
-}
+/** {
+    border: 5px solid darkred;
+}*/
 
 body {
-    display: flex;
     margin: 0px;
-
-    flex-direction: column;
-    flex: 1;
 }
 
 a {
@@ -15,18 +11,28 @@ a {
     color: #F9FAF8;
     font-family: "Anton";
     font-size: 20px;
-    
+}
+
+.left-information {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    align-items: flex-start;
+}
+
+.left-information h3 {
+    font-weight: 200;
 }
 
 .information {
     display: flex;
     justify-content: center;
-    align-self: stretch;
-    min-height: 300px;
+    align-items: center;
     color: #F9FAF8;
-    padding: 100px 100px 0px 100px;
-    background-color: #1F2937;
+    padding: 100px 100px 100px 100px;
+    background-color: #000000;
     gap: 60px;
+    flex-wrap: wrap;
 }
 
 .subtitle {
@@ -37,7 +43,7 @@ a {
     justify-content: center;
 }
 
-.Logo{
+.logo{
     font-family: "Anton";
     font-weight: 100;
 }
@@ -45,10 +51,11 @@ a {
 .header {
     display: flex;
     flex: 1;
-    background-color: #1F2037;
+    background-color: rgb(145, 44, 44);
     justify-content: space-between;
     color: #F9FAF8;
     padding: 0px 100px 0px 100px;
+    
 }
 
 .right-links {
@@ -58,9 +65,23 @@ a {
 }
 
 .information-button {
+    width: 100px;
+    height: 35px;
     border-radius: 10px;
     padding: 5px 15px 5px 15px;
+    margin: 20px 0px 20px 0px;
+    font-weight: bolder;
 }
+
+.information .information-button{
+    background-color: rgb(145, 44, 44);
+}
+
+.container .information-button {
+    border: 3px solid white;
+    background-color: rgb(145, 44, 44);
+}
+
 
 .infographics {
     display: flex;
@@ -70,39 +91,90 @@ a {
 
 .images {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    max-width: 750px;
-    min-width: 750px;
+    justify-content: center;
+    gap: 80px;
+    flex-wrap: wrap;
 }
 
 .image {
-    width: 100px;
+    width: 200px;
+    height: 200px;
     word-wrap: break-word;
     border: 5px solid darkred;
     border-radius: 15px;
     text-align: center;
+    box-sizing: border-box;
+    object-fit: cover;
 }
 
 .text{
-    max-width: 100px;
+    font-size: larger;
+    width: 200px;
+    color: rgb(114, 35, 35);
 }
 
 .quotes {
     display: flex;
     justify-content: center;
-    background: lightgray;
+    background: #f28c28;
+    background: rgb(0, 0, 0);
 }
 
 .quotes h1 {
-    color: rgb(78, 78, 78);
+    color: white;
 }
 
 .quotes h2 {
     display: flex;
     justify-content: flex-end;
+    color: white;
 }
 
 .quotes-container {
     max-width: 750px;
+    padding: 50px;
+}
+
+.signup-text h3, .signup-text h4 {
+    padding: 0px;
+    margin: 0px;
+}
+
+.signup-text h4 {
+    font-weight: 100;
+    max-width: 500px;
+}
+
+.signup {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    box-sizing: border-box;
+    margin: 30px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(145, 44, 44);
+    border-radius: 7px;
+    max-width: 750px;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.footer {
+    background-color: rgb(145, 44, 44);
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.test {
+    display: flex;
+    border: 5px solid green;
+    flex: 1;
 }
